@@ -1,19 +1,9 @@
 /* @flow */
+/* @flow-runtime ignore */
 
-import * as validators from 'flow-runtime-validators';
-import Moment from 'moment';
-import MomentTimeZone from 'moment-timezone';
-import fs from 'fs';
 import validator from 'validator';
 
 export type URL = string;
-URL.addConstraint(
-  it => {
-    if (!validator.isURL(it)) {
-      return "must be valid URL";
-    }
-  }
-);
 
 export const isDomainNameSocketLike = (it: string): boolean => {
   return (/^[a-zA-Z0-9]+([-.][a-zA-Z0-9]+)*\.[a-zA-Z]{2,}:[0-9]+$/.test(it));
@@ -47,22 +37,8 @@ export const isSocket = (it: string): boolean => {
 };
 
 export type Socket = string;
-Socket.addConstraint(
-  it => {
-    if (isSocket(it)) {
-      return "must be valid socket";
-    }
-  }
-);
 
 export type IP = string;
-IP.addConstraint(
-  it => {
-    if (!validator.isIP(it, 4)) {
-      return "must be valid IP";
-    }
-  }
-);
 
 export type User = {
   name: string,
