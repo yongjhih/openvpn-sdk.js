@@ -1,6 +1,6 @@
 {
   "name": "openvpn-sdk",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Openvpn SDK for JavaScript",
   "main": "lib/openvpn.js",
   "author": "Wendly Li <wendly777@gmail.com>",

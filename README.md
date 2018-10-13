@@ -19,13 +19,20 @@ openVpn.login(username, password)
 
 ## Installation
 
+
+```sh
+yarn add git+ssh://git@github.com/Wendly/openvpn-sdk.js.git#0.1.0
 ```
+
+For latest:
+
+```sh
 yarn add git+ssh://git@github.com/Wendly/openvpn-sdk.js.git#dist
 ```
 
 and also you can install specific commit of dist:
 
-```
+```sh
 yarn add git+ssh://git@github.com/Wendly/openvpn-sdk.js.git#<commit-id>
 ```
 
