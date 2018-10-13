@@ -1,4 +1,5 @@
 /* @flow */
+/* @flow-runtime ignore */
 
 import Rx from 'rxjs';
 import axios from 'axios';

@@ -1,4 +1,5 @@
 /* @flow */
+/* @flow-runtime ignore */
 
 import * as validators from 'flow-runtime-validators';
 import Moment from 'moment';
