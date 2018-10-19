@@ -1,14 +1,12 @@
 /* @flow */
+/* @flow-runtime ignore */
 
 import Rx from 'rxjs';
 import axios from 'axios';
 import {Axios} from 'axios';
 import type {AxiosPromise} from 'axios';
 import type {
-  Email,
-  File,
   URL,
-  UUID,
   IP,
   User,
 } from './types';
